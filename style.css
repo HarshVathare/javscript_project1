@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu{
+    display: none;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+    width: 10vw;
+    height: 7vh;
+    font-size: 18px;
+}
+
+.dom_contener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 1230px;
+    margin: auto;
+}
+
+.hover_effect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+
+.hover_effect .imgg{
+    /* width: 100%; */
+    transition: 0.7s ease;
+    transform: translateZ(0);
+}
+
+.hover_effect:hover .imgg{
+    transform: scale(1.1) translateZ(30px);
+}
+
+
+
+.imgg{
+    width: 200px;
+    height: 290px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+}
+
+/**
+This is the responsive code
+**/
+@media only screen and (max-width:1060px){
+    .dom_contener{
+        width: 1060px;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width:1000px){
+    .dom_contener{
+        width: 850px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .dom_contener{
+        width: 800px;
+        margin: auto;
+    }
+
+    button{
+         
+        width: 9vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:780px){
+    .dom_contener{
+        width: 750px;
+        margin: auto;
+    }
+
+    button{
+         
+        width: 9vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+    .imgg{
+        width: 180px;
+        height: 250px;
+        border-radius: 10px;
+        border: 1px solid yellow;
+    }
+}
+
+@media only screen and (max-width:740px){
+    .dom_contener{
+        width: 650px;
+        margin: auto;
+    }
+
+    button{
+         
+        width: 9vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+    .imgg{
+        width: 180px;
+        height: 250px;
+        border-radius: 10px;
+        border: 1px solid yellow;
+    }
+}
+
+@media only screen and (max-width:615px){
+    .dom_contener{
+        width: 550px;
+        margin: auto;
+    }
+
+    button{
+         
+        width: 9vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+
+    .imgg{
+        width: 180px;
+        height: 250px;
+        border-radius: 10px;
+        border: 1px solid yellow;
+    }
+}
+
+@media only screen and (max-width:600px){
+    button{  
+        width: 10vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:570px){
+    button{  
+        width: 10vw;
+        height: 6vh;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:530px){
+   #nevbar{
+    background-color: blue;
+    margin: auto;
+    width: 100vw;
+   }
+
+    button{  
+        display: none;
+    }
+
+    .dom_contener{
+        width: 520px;
+        margin: auto;
+    }
+
+    .imgg{
+        width: 185px;
+        height: 260px;
+        border-radius: 10px;
+        border: 1px solid yellow;
+    }
+
+}
+
+@media only screen and (max-width:470px){
+    body{
+        width: 100vw;
+    }
+    #nevbar{
+        width: 100vw;
+    }
+
+    .imgg{
+        width: 210px;
+        height: 260px;
+        border-radius: 10px;
+        border: 1px solid yellow;
+    }
+
+    .dom_contener{
+        width: 400px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:480px){
+    body{
+        width: 100vw;
+    }
+
+    #nevbar{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:415px){
+    .imgg{
+        width: 230px;
+        height: 270px;
+        border-radius: 10px;
+        border: 1px solid yellow;
+    }
+}
+
+@media only screen and (max-width:375px){
+    body{
+        width: 100vw;
+    }
+    #nevbar{
+        width: 100vw;
+         
+    }
+
+    .imgg{
+        width: 250px;
+        height: 290px;
+        border-radius: 10px;
+        border: 1px solid yellow;
+    }
+
+    .dom_contener{
+        width: 375px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .dom_contener{
+        width: 350px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:335px){
+    .dom_contener{
+        width: 335px;
+        margin-left: auto;
+         
+    }
+}
+
+
+/* Responsive code is End   */
+
+/* Display menu button*/
+@media only screen and (max-width:530px){
+    #menu{
+        display: block;
+        width: 13vw;
+        height: 6vh;
+        background-color: chocolate;
+        color: white;
+        margin-left:10px;
+    }
+
+     
+}
+
+@media only screen and (max-width:480px){
+    #menu{
+        display: block;
+        width: 13vw;
+        height: 6vh;
+        background-color: chocolate;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:375px){
+    #menu{
+        display: block;
+        width: 16vw;
+        height: 6vh;
+        background-color: chocolate;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:335px){
+    #menu{
+        display: block;
+        width: 17vw;
+        height: 6vh;
+        background-color: chocolate;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:335px){
+    #menu{
+        display: block;
+        width: 17vw;
+        height: 6vh;
+        background-color: chocolate;
+        color: white;
+    }
+
+    body{
+       width: 100vw;
+    }
+
+    #nevbar{
+        width: 100vw;
+        background-color: aqua;
+    }
+}
+
+.hidden_menu{
+    width: 60vw;
+    height: 60vh;
+    background-color: violet;
+    color: black;
+    display: none;
+}
+
+
+
+/* hidden menu */
+@media only screen and (max-width:530px){
+    #nevbar{
+        /* position:absolute; */
+    }
+
+    .hidden_menu{
+        width: 60vw;
+        height: 60vh;
+         
+        color: black;
+        
+        position:relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hidden_menu button{
+        display: flex;
+        justify-content: center; 
+        
+        width: 22vw;
+        height: 6.5vh;
+        margin: auto;
+         
+        padding-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nevbar{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box{
+    width: 10vw;
+    height: 7vh;
+    font-size: 20px;
+    color: black;
+}
+
+#All{
+    background-color: blue;
+    text-align: center;
+    padding: 9px;
+    cursor: pointer;
+}
+
+#All:hover{
+    background-color: transparent;
+    color: white;
+}
+
+#Action{
+      background-color: blue;
+      text-align: center;
+      padding: 9px;
+      cursor: pointer;
+}
+
+#Action:hover{
+    background-color: transparent;
+    color: white;
+}
+
+#Thriller{
+    background-color: white;
+    text-align: center;
+    padding: 9px;
+    cursor: pointer;
+}
+    
+#Thriller:hover{
+    background-color: transparent;
+    color: white;
+}
+
+#Animation{
+    background-color:aqua;
+    text-align: center;
+    padding: 9px;
+    cursor: pointer;
+}
+
+#Animation:hover{
+    background-color: transparent;
+    color: white;
+}
+
+#Horrer{
+    background-color:chocolate;
+    text-align: center;
+    padding: 9px;
+    cursor: pointer;
+}
+
+#Horrer:hover{
+    background-color: transparent;
+    color: white;
+}
+
+#Drama{
+    background-color: aqua;
+    text-align: center;
+    padding: 9px;
+    cursor: pointer;
+}
+
+#Drama:hover{
+    background-color: transparent;
+    color: white;
+}
+
+#Scifi{
+    background-color: white;
+    text-align: center;
+    padding: 9px;
+    cursor: pointer;
+}
+
+#Scifi:hover{
+    background-color: transparent;
+    color: white;
+}
